@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "generations",
+  "info": {
+    "singularName": "generation",
+    "pluralName": "generations",
+    "displayName": "Generation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "yearFrom": {
+      "type": "integer"
+    },
+    "model": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::model.model"
+    },
+    "yearTo": {
+      "type": "integer"
+    }
+  }
+}

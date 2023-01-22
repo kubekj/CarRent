@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fuels",
+  "info": {
+    "singularName": "fuel",
+    "pluralName": "fuels",
+    "displayName": "Fuel",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

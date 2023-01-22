@@ -1,0 +1,348 @@
+/* menu */  
+  /* baner */
+  
+  .aboutBaner {
+    position: relative;
+    height: 495px;
+    background: url(../assets/baners/about_baner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutBaner h2 {
+    font-size: 3em;
+    color: var(--letter-color1);
+    font-weight: 600;
+    line-height: 1.5em;
+  }
+
+  .baner {
+    position: relative;
+    height: 495px;
+    background: url(../assets/baners/hitw_baner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*filter: brightness(75%);*/
+  }
+  .baner h2 {
+    font-size: 3em;
+    color: var(--letter-color1);
+    font-weight: 600;
+    line-height: 1.5em;
+  }
+  
+  /* about */
+  
+  .heading {
+    width: 100%;
+    text-align: center;
+    color: var(--letter-color2);
+  }
+  .about {
+    background: var(--bg-color1);
+  }
+  .about .heading h2 {
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: -0.005em;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .about .content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 96px;
+  }
+  .about .content:nth-child(3) {
+    display: none;
+  }
+  .about .content .contentBox {
+    width: 50%;
+    padding-right: 150px;
+    padding-left: 150px;
+    align-items: center;
+    display: flex;
+  }
+  .about .content .contentBox .image1 {
+    width: 55.25px;
+    height: 48px;
+    margin-bottom: 30px;
+  }
+  .about .content .contentBox .image2 {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 30px;
+    margin-left: -10px;
+  }
+  .about .content .contentBox .image3 {
+    width: 44px;
+    height: 38px;
+    margin-bottom: 30px;
+  }
+  .about .content .contentBox .image4 {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 30px;
+    margin-left: -10px;
+  }
+  .about .content .contentBox h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: -0.022em;
+    color: var(--letter-color2);
+  }
+  .about .content .contentBox p {
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-size: 18px;
+    line-height: 1.47059;
+    color: var(--letter-color3);
+  }
+  .img1 {
+    width: 50%;
+    height: 560px;
+    background: url(../assets/photos/hitw_photo1.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .img2 {
+    width: 50%;
+    height: 560px;
+    background: url(../assets/photos/hitw_photo2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .img3 {
+    width: 50%;
+    height: 560px;
+    background: url(../assets/photos/hitw_photo3.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .img4 {
+    width: 50%;
+    height: 560px;
+    background: url(../assets/photos/hitw_photo2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .about2 {
+    padding-top: 80px;
+    background: var(--bg-color2);
+    padding-bottom: 80px;
+  }
+  .about2 .heading {
+    width: 100%;
+    text-align: center;
+    color: var(--letter-color1);
+  }
+  .about2 .heading h2 {
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: -0.005em;
+  }
+  .about2 .content {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 96px;
+  }
+  .about2 .content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about2 .content .contentBox {
+    width: 50%;
+    padding-left: 150px;
+    align-items: center;
+    display: flex;
+  }
+  .about2 .content .contentBox h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: -0.022em;
+    color: var(--letter-color1);
+  }
+  .about2 .content .contentBox p {
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-size: 18px;
+    line-height: 1.47059;
+    color: var(--letter-color5);
+  }
+  
+  .about2 .content .file {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 50%;
+  }
+  .about2 .content .file .download_pdf{
+    background-color: var(--file-bg-color);
+    width: 450px;
+    height: 108px;
+    border-radius: 8px;
+    display: flex;
+  }
+  .about2 .content .file .download_pdf .pdfimage{
+    height: 62px;
+    width: 62px;
+    margin: 23px 0px 23px 23px;
+  }
+  .about2 .content .file .download_pdf .download_content{
+    margin: 22px 31px 21px 15px;
+  }
+  .about2 .content .file .download_pdf .download_content a{
+    text-decoration: none;
+    color: var(--letter-color4);
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .about2 .content .file .download_pdf .download_content a:hover{
+   color: var(--button-color2);
+  }
+  .about2 .content .file .download_pdf .download_content h5{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--letter-color1);
+    margin-bottom: 4px;
+    margin-top: 4px;
+  }
+  .about2 .content .file .download_pdf .download_content{
+    float: right;
+  }
+  
+  @media(max-width: 1050px){
+    .about .content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 96px;
+        flex-direction: column;
+    }
+    .about .content .contentBox {
+        width: 100%;
+        padding-right: 100px;
+        padding-left: 100px;
+        align-items: center;
+        display: flex;
+    }
+    .img1, .img3, .img4 {
+        margin-top: 116px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .about .content:nth-child(3){
+        display: flex;
+    }
+    .about .content:nth-child(4){
+        display: none;
+    }
+    .about2 .content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .about2 .content .contentBox {
+        width: 100%;
+        padding-right: 100px;
+        padding-left: 100px;
+        align-items: center;
+        display: flex;
+    }
+    .about2 .file {
+        margin-top: 116px;
+        width: 100%;
+    }
+  }
+  @media(max-width: 748px){
+    .about2 .content .file .download_pdf .download_content {
+      margin: 10px 31px 10px 15px;
+    }
+  }
+  @media(max-width: 520px){
+    .about .content .contentBox {
+      width: 100%;
+      padding-right: 50px;
+      padding-left: 50px;
+      align-items: center;
+      display: flex;
+    }
+    .about2 .content .contentBox {
+        width: 100%;
+        padding-right: 50px;
+        padding-left: 50px;
+        align-items: center;
+        display: flex;
+    }
+    .about2 .file {
+        margin-top: 116px;
+        width: 100%;
+    }
+    .about2 .content .file .download_pdf .download_content {
+      margin: 40px 31px 40px 15px;
+    }
+    .about2 .content .file {
+      width: 60%;
+    }
+    .about2 .content .file .download_pdf .download_content h5 {
+      display: none;
+    }
+  }
+  @media(max-width: 430px){
+    .about2 .content .file {
+      width: 70%;
+    }
+  }
+  @media(max-width: 367px){
+    .about2 .content .file {
+      width: 100%;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .about .content .contentBox {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .about2 .content .contentBox {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  }
+  @media(max-width: 297px){
+    .about2 .content .file .download_pdf .download_content {
+      margin: 30px 31px 30px 15px;
+    }
+  }

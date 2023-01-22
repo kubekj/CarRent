@@ -1,0 +1,91 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cars",
+  "info": {
+    "singularName": "car",
+    "pluralName": "cars",
+    "displayName": "Car",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "picture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "engine": {
+      "type": "string"
+    },
+    "maxSpeed": {
+      "type": "integer",
+      "min": 0
+    },
+    "horsePower": {
+      "type": "integer",
+      "min": 0
+    },
+    "fuel": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::fuel.fuel"
+    },
+    "gearbox": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::gearbox.gearbox"
+    },
+    "drive": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::drive.drive"
+    },
+    "model": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::generation.generation"
+    },
+    "year": {
+      "type": "integer",
+      "max": 2050,
+      "min": 1900
+    },
+    "acceleration": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    },
+    "pricePerDay": {
+      "type": "decimal",
+      "min": 0,
+      "required": true
+    },
+    "galleries": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::gallery.gallery",
+      "mappedBy": "car"
+    },
+    "isAvailable": {
+      "type": "boolean"
+    },
+    "reservations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::reservation.reservation",
+      "mappedBy": "car"
+    }
+  }
+}

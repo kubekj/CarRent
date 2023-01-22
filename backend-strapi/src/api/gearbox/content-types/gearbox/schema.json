@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gearboxes",
+  "info": {
+    "singularName": "gearbox",
+    "pluralName": "gearboxes",
+    "displayName": "Gearbox",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "gearsNumber": {
+      "type": "integer",
+      "required": false,
+      "default": 0
+    }
+  }
+}

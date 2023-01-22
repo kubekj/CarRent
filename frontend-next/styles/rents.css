@@ -1,0 +1,63 @@
+.yourRentsSection{
+    background: var(--bg-color1);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.yourRentsSection .yourRents{
+    width: 100%;
+    max-width: 1800px;
+    margin-left: 25px;
+    margin-right: 75px;
+}
+.yourRentsSection .yourRents .yourRentsBaner{
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+}
+.yourRentsSection .yourRents .yourRentsBaner h2{
+    font-size: 32px;
+    color: var(--letter-color2);
+    font-weight: 600;
+    line-height: 1.5em;
+}
+.yourRentsSection .yourRents .yourRentsBaner p{
+    font-size: 20px;
+    color: var(--letter-color4);
+    font-weight: 500;
+    line-height: 1.5em;
+}
+.yourRentsSection .yourRents .notFoundRentsMessage{
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+.yourRentsSection .yourRents .notFoundRentsMessage .errorRentsGif{
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 300px;
+}
+.yourRentsSection .yourRents .notFoundRentsMessage .notFoundRents {
+    font-size: 20px;
+    color: var(--letter-color2);
+    font-weight: 500;
+    line-height: 1.5em;
+    margin-top: 30px;
+}
+.yourRentsSection .yourRents .notFoundRentsMessage p {
+    font-size: 16px;
+    color: var(--letter-color4);
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+@media(max-width: 650px){
+    .yourRentsSection .yourRents{
+        margin-left: 10px;
+        margin-right: 30px;
+    }
+}

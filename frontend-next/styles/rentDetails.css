@@ -1,0 +1,235 @@
+.rentDetailsSection{
+    background: var(--bg-color1);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.rentDetailsSection .rentDetailsInfo{
+    width: 100%;
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rentDetailsSection .rentDetails .rentDetailsBaner{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.rentDetailsSection .rentDetails .rentDetailsBaner h2{
+    font-size: 32px;
+    color: var(--letter-color2);
+    font-weight: 600;
+    line-height: 1.5em;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsInfoCar {
+   display: flex;
+}
+.rentDetailsSection .rentDetailsInfoCar .rentDetailsInfoCarPhoto{
+    margin-top: 10px;
+    height: 200px;
+    width: 338px;
+    border-radius: 8px;
+    background-image: url(../assets/photos/carphoto.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+}
+.rentDetailsSection .rentDetailsInfo .rentDetailsInfoCar .rentDetailsInfoCarInformations {
+    /*display: table-column;*/
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+.rentDetailsSection .rentDetailsInfo .rentDetailsInfoCar .rentDetailsInfoCarInformations .rentDetailsInfoCarInfo:nth-child(2){
+    margin-top: 10px;
+}
+.rentDetailsSection .rentDetailsInfo .rentDetailsInfoCar .rentDetailsInfoCarInformations .rentDetailsInfoCarInfo:nth-child(3){
+    margin-top: 10px;
+}
+.rentDetailsSection .rentDetailsInfo .rentDetailsInfoCar .rentDetailsInfoCarInformations .rentDetailsInfoCarInfo:nth-child(4){
+    margin-top: 10px;
+}
+.rentDetailsSection .rentDetailsInfo .rentDetailsInfoCar .rentDetailsInfoCarInformations .rentDetailsInfoCarInfo p{
+    font-size: 16px;
+    color: #696969;
+    font-weight: 700;
+}
+.rentDetailsSection .rentDetailsInfo .rentDetailsInfoCar .rentDetailsInfoCarInformations .rentDetailsInfoCarInfo h1{
+    font-size: 22px;
+    color: var(--letter-color2);
+    font-weight: 600;
+}
+
+
+
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo{
+    margin-top: 25px;
+}
+
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo .rentDetailsCollectRent{
+    margin-bottom: 20px;
+}
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo .rentDetailsCollectRent p{
+    font-size: 16px;
+    color: #696969;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo .rentDetailsCollectRent .rentDetailsWhere .icon,
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo .rentDetailsCollectRent .rentDetailsWhen .icon, 
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo .rentDetailsCollectRent .rentDetailsTime .icon{
+    width: 25px;
+    height: 25px;
+}  
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo .rentDetailsCollectRent .rentDetailsWhere span,
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo .rentDetailsCollectRent .rentDetailsWhen span, 
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo .rentDetailsCollectRent .rentDetailsTime span{
+    font-size: 22px;
+    color: var(--letter-color2);
+    font-weight: 600;
+    margin-left: 15px;
+}  
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo .rentDetailsCollectRent .rentDetailsWhere,
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo .rentDetailsCollectRent .rentDetailsWhen, 
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo .rentDetailsCollectRent .rentDetailsTime{
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 10px;
+} 
+
+
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo .rentDetailsReturnRent p{
+    font-size: 16px;
+    color: #696969;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo .rentDetailsReturnRent .rentDetailsWhere .icon,
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo .rentDetailsReturnRent .rentDetailsWhen .icon, 
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo .rentDetailsReturnRent .rentDetailsTime .icon{
+    width: 25px;
+    height: 25px;
+}  
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo .rentDetailsReturnRent .rentDetailsWhere span,
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo .rentDetailsReturnRent .rentDetailsWhen span, 
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo .rentDetailsReturnRent .rentDetailsTime span{
+    font-size: 22px;
+    color: var(--letter-color2);
+    font-weight: 600;
+    margin-left: 15px;
+} 
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo .rentDetailsReturnRent .rentDetailsWhere,
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo .rentDetailsReturnRent .rentDetailsWhen, 
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo .rentDetailsReturnRent .rentDetailsTime{
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 10px;
+} 
+
+
+
+
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo .rentDetailsStatus{
+    margin-top: 20px;
+}
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo .rentDetailsStatus p{
+    font-size: 16px;
+    color: #696969;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo .rentDetailsStatus h2.paid{
+    font-size: 22px;
+    color: var(--letter-color-rent-paid);
+    font-weight: 600;
+    line-height: 1.5em;
+}
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo .rentDetailsStatus h2.notPaid{
+    font-size: 22px;
+    color: var(--letter-color-rent-notPaid);
+    font-weight: 600;
+    line-height: 1.5em;
+}
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo .rentDetailsStatus h2.rented{
+    font-size: 22px;
+    color: var(--letter-color-rent-rented);
+    font-weight: 600;
+    line-height: 1.5em;
+}
+.rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsDeliveryInfo .rentDetailsStatus h2.returned{
+    font-size: 22px;
+    color: var(--letter-color-rent-returned);
+    font-weight: 600;
+    line-height: 1.5em;
+}
+
+
+.rentDetailsSection .rentDetails .backToRentsButton{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.rentDetailsSection .rentDetails .backToRentsButton .rentDetailsBackButton{
+    color: var(--button-letter-color);
+    width: 128px;
+    height: 44px;
+    border: 1px solid var(--button-letter-color);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 120px;
+}
+.rentDetailsSection .rentDetails .backToRentsButton .rentDetailsBackButton:hover {
+    background: var(--button-bg-color-hover);
+    color: var(--button-letter-color-hover);
+}
+
+@media(max-width: 862px){
+    .rentDetailsSection .rentDetailsInfoCar .rentDetailsInfoCarPhoto{
+        height: 210px;
+        width: 360px;
+    }
+}
+@media(max-width: 852px){
+    .rentDetailsSection .rentDetailsInfoCar .rentDetailsInfoCarPhoto{
+        height: 210px;
+        width: 360px;
+    }
+}
+@media(max-width: 640px){
+    .rentDetailsSection .rentDetails .rentDetailsInfo .rentDetailsInfoCar {
+        display: block;
+    }
+    .rentDetailsSection .rentDetailsInfo .rentDetailsInfoCar .rentDetailsInfoCarInformations {
+        margin-left: 0px;
+        margin-top: 25px;
+    }
+    .rentDetailsSection .rentDetailsInfo {
+        justify-content: center;
+        align-content: center;
+        display: grid;
+    }
+}
+@media(max-width: 380px){
+    .rentDetailsSection .rentDetailsInfoCar .rentDetailsInfoCarPhoto{
+        height: 230px;
+        width: 100%;
+    }
+    .rentDetailsSection{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

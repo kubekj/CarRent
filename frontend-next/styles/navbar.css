@@ -1,0 +1,398 @@
+/* menu */
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 83px;
+  padding: 30px 30px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+  background: var(--navbar-color);
+  color: var(--letter-color2);
+}
+header.sticky {
+  background: var(--navbar-color);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+header .logo .logo_icon {
+  width: 80px;
+  height: 30px;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  margin-right: 98px;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+header ul li:nth-child(5) {
+  display: none;
+}
+
+header ul li a {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  color: var(--letter-color2);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+header ul li a.active {
+  color: var(--active-link);
+  font-weight: 560;
+  transition: 0.01s;
+}
+header ul li a:hover {
+  color: var(--active-link);
+}
+
+header.sticky ul li a {
+  color: #111;
+}
+header.sticky ul li a.active {
+  color: var(--active-link);
+  font-weight: 560;
+  transition: 0.01s;
+}
+header.sticky ul li a:hover {
+  color: var(--active-link);
+}
+header .burgerMenu {
+  display: none;
+}
+header .bookButton {
+  background: var(--button-color);
+  color: var(--letter-color1);
+  width: 125px;
+  height: 44px;
+  padding: 10px 18px 10px 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 0px solid black;
+  font-size: 14px;
+  font-weight: 400;
+}
+.buttons{
+  right: 50px;
+  float: right;
+  position: absolute;
+  display: inline-flex;
+}
+.buttons .user_icon{
+  width: 40px;
+  height: 40px;
+  margin-right: 25px;
+}
+
+.buttons .greeting-text {
+  margin-right: 10px;
+  align-self: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+.accoountButtons .greeting-text-inButton {
+  display: none;
+}
+
+.accoountButtons{
+  position: fixed;
+  top: 83px;
+  right: -100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 30px;
+  margin-right: 50px;
+  width: 35%;
+  height: 15%;
+  background-color: rgba(255, 255, 255, 0);
+  transition: 0.5s;
+  z-index: 1000;
+}
+.accoountButtons.open{
+  background-color: #7f56d9;
+  right: 85px;
+  width: 166px;
+  height: 149px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  box-shadow: 0px 1px 20px 0px rgb(0 0 0 / 10%);
+}
+.logoutButton{
+  background: var(--letter-color2);;
+  color: white;
+  width: 125px;
+  height: 44px;
+  padding: 10px 18px 10px 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 0px solid black;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.logoutButton:hover{
+  background: #fff;
+  color: var(--letter-color2);;
+}
+.loginButton {
+  background: var(--letter-color2);;
+  color: white;
+  width: 125px;
+  height: 44px;
+  padding: 10px 18px 10px 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 0px solid black;
+  font-size: 14px;
+  font-weight: 400;
+}
+.yourRentsButton{
+  background: var(--letter-color2);;
+  color: white;
+  width: 125px;
+  height: 44px;
+  padding: 10px 18px 10px 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 0px solid black;
+  font-size: 14px;
+  font-weight: 400;
+}
+.registrationButton {
+  background: var(--letter-color2);;
+  color: white;
+  width: 125px;
+  height: 44px;
+  padding: 10px 18px 10px 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 0px solid black;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.registrationButton:hover {
+  background: #fff;
+  color: var(--letter-color2);;
+}
+.loginButton:hover,
+.yourRentsButton:hover{
+  background: #fff;
+  color: var(--letter-color2);;
+}
+
+header .bookButton:hover {
+  background: var(--button-color2);
+}
+
+@media(max-width: 1250px){
+  .buttons .greeting-text {
+    display: none;
+  }
+  .accoountButtons.open .greeting-text-inButton  {
+    align-self: center;
+    color: var(--letter-color1);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: flex;
+  }
+  .accoountButtons.open {
+    background-color: #7f56d9;
+    right: 85px;
+    width: 187px;
+    height: 187px;
+    border-radius: 8px;
+    align-items: center;
+    /* justify-content: center; */
+    margin-top: 10px;
+    box-shadow: 0px 1px 20px 0px rgb(0 0 0 / 10%);
+  }
+  .yourRentsButton {
+    margin-top: 10px;
+  }
+}
+
+
+@media(max-width: 1050px){
+  .yourRentsButton {
+    margin-top: 0px;
+  }
+  .buttons .greeting-text {
+    display: block;
+  }
+  .accoountButtons.open .greeting-text-inButton {
+    display: none;
+  }
+  header a{
+      z-index: 1000;
+  }
+  header.sticky{
+      z-index: 1000;
+  }
+  .buttons .bookButton{
+    display: none;
+  }
+  .buttons .user_icon{
+    margin-right: 25px;
+  }
+  .menu{
+    position: fixed;
+    top: 83px;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    height: 100%;
+    background: var(--navbar-color);
+    transition: 0.5s;
+    z-index: 1000;
+    margin-right: 0px;
+  }
+  .menu.active{
+    background: var(--navbar-color);
+    box-shadow: -20px 20px 20px 0px rgba(0, 0, 0, 0.1);
+    right: 0;
+  }
+  .accoountButtons{
+    margin-right: 15px;
+  }
+  .accoountButtons.open{
+    right: 0px;
+    background-color: #7f56d9;
+    /* right: 85px; */
+    width: 166px;
+    height: 149px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    box-shadow: 0px 1px 20px 0px rgb(0 0 0 / 10%);
+  }
+  header ul li:nth-child(5) {
+    margin-top: 20px;
+    display: inline;
+  }
+  header ul li a{
+      color: var(--letter-color2);
+      font-weight: 500;
+      font-size: 18px;
+      margin: 15px;
+  }
+  header .burgerMenu{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      align-items: center;
+      transition: all .3s ease-in-out;
+  }
+  .burgerMenu .toggle{
+      width: 30px;
+      height: 4px;
+      background: black;
+      border-radius: 5px;
+      transition: all .3s ease-in-out;
+  }
+  header .bookButton {
+    background: var(--button-color);
+    color: var(--letter-color1);
+    width: 125px;
+    height: 44px;
+    padding: 10px 18px 10px 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 0px solid black;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .burgerMenu .toggle::before, .toggle::after{
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      background: black;
+      border-radius: 5px;
+      transition: all .3s ease-in-out;
+  }
+  .burgerMenu .toggle::before{
+      transform: translateY(-10px);
+  }
+  .burgerMenu .toggle::after{
+      transform: translateY(10px);
+  }
+  /* hambuerger animation */
+  .burgerMenu.open .toggle{
+      transform: translateX(-30px);
+      background: transparent;
+      box-shadow: none;
+  }
+  .burgerMenu.open .toggle::before{
+      transform: rotate(45deg) translate(20px,-20px);
+  }
+  .burgerMenu.open .toggle::after{
+      transform: rotate(-45deg) translate(20px,20px);
+  }
+}
+
+@media(max-width: 530px){
+  .menu{
+    position: fixed;
+    top: 83px;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    background: var(--navbar-color);
+    transition: 0.5s;
+    z-index: 1000;
+    margin-right: 0px;
+  }
+}
+
+@media(max-width: 450px){
+  .buttons .greeting-text {
+    display: none;
+  }
+  .accoountButtons.open .greeting-text-inButton  {
+    align-self: center;
+    color: var(--letter-color1);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: flex;
+  }
+  .accoountButtons.open {
+    background-color: #7f56d9;
+    right: 0px;
+    width: 187px;
+    height: 187px;
+    border-radius: 8px;
+    align-items: center;
+    /* justify-content: center; */
+    margin-top: 10px;
+    box-shadow: 0px 1px 20px 0px rgb(0 0 0 / 10%);
+  }
+  .yourRentsButton {
+    margin-top: 10px;
+  }
+}

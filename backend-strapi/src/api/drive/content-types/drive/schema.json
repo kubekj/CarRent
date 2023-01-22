@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "drives",
+  "info": {
+    "singularName": "drive",
+    "pluralName": "drives",
+    "displayName": "Drive",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

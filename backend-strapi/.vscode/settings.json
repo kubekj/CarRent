@@ -1,0 +1,4 @@
+{
+  "appService.defaultWebAppToDeploy": "/subscriptions/2f559310-8ab8-4182-93aa-42ff697e91dd/appservices/subscriptions/2f559310-8ab8-4182-93aa-42ff697e91dd/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/carrentalcms",
+  "appService.deploySubpath": "."
+}

@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reservations",
+  "info": {
+    "singularName": "reservation",
+    "pluralName": "reservations",
+    "displayName": "Reservation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "reservations"
+    },
+    "dateFrom": {
+      "type": "datetime",
+      "required": true,
+      "default": "2022-10-31T23:00:00.000Z"
+    },
+    "dateTo": {
+      "type": "datetime",
+      "required": true,
+      "default": "2022-11-01T23:00:00.000Z"
+    },
+    "isPaid": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "notPaid",
+        "paid",
+        "rented",
+        "returned"
+      ]
+    },
+    "car": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::car.car",
+      "inversedBy": "reservations"
+    },
+    "paymentType": {
+      "type": "enumeration",
+      "enum": [
+        "creditCard",
+        "onTheSpot",
+        "none"
+      ],
+      "default": "none"
+    }
+  }
+}

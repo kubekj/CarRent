@@ -1,0 +1,927 @@
+/* rental section */
+
+.rentalSection {
+    flex-direction: row;
+    justify-content: space-around;
+    background: var(--bg-color1);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.rentalSection .title {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    width: 100%;
+}
+.rentalSection .title h2{
+    font-size: 32px;
+    color: var(--letter-color2);
+    font-weight: 600;
+    line-height: 1.5em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.rentalSection .rentalContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rentalSection .rentalContent .carImage2{
+    display: none;
+}
+.rentalSection .rentalContent .rentalDetails{
+    width: 50%;
+    /*align-items: center;*/
+    display: flex;
+}
+.rentalSection .rentalContent .rentalSummary{
+    width: 42%;
+    margin-top: 0px;
+    height: 700px;
+}
+.rentalSection .rentalContent .rentalDetails .carSummary .field p{
+    font-size: 16px;
+    color: #696969;
+    font-weight: 700;
+}
+.rentalSection .rentalContent .rentalDetails .carSummary .field h1{
+    font-size: 22px;
+    color: var(--letter-color2);
+    font-weight: 600;
+}
+.priceField{
+    display: none;
+    margin-top: 20px;
+}
+.priceField p{
+    font-size: 16px;
+    color: #696969;
+    font-weight: 700;
+}
+.priceField h2{
+    font-size: 22px;
+    color: var(--letter-color4);
+    font-weight: 600;
+}
+
+.priceField2{
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.priceField2 .priceRental{
+    float: left;
+}
+.priceField2 .submitRental{
+    float: right;
+}
+.priceField2 .priceRental p{
+    font-size: 16px;
+    color: #696969;
+    font-weight: 700;
+}
+.priceField2 .priceRental h2{
+    font-size: 22px;
+    color: var(--letter-color4);
+    font-weight: 600;
+}
+.priceField2 .submitRental .nextButton2 {
+    color: var(--button-letter-color);
+    width: 118px;
+    height: 44px;
+    border: 1px solid var(--button-letter-color);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+}
+.priceField2 .nextButton2:hover{
+    background: var(--button-bg-color-hover);
+    color: var(--button-letter-color-hover);
+}
+
+.rentalDatesForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+    margin-top: 20px;
+}
+.rentalDetails {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 700px;
+}
+.rentalSummary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.rentalSummary .carImage {
+    border-radius: 10px;
+}
+.rentalDetails .title,
+.section .pageTitle {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 88%;
+    color: #242121;
+}
+.rentalDetails .carSummary {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.rentalDateDetails {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.rentalAuthSection .label,
+.rentalDateDetails .title,
+.rentalSection .label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 175%;
+    color: #696969;
+}
+.rentalSummary .priceField .value {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 112%;
+    color: #7F56D9;
+}
+.summaryAndPrice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rentalDateDetails .rentalDateField {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.rentalDateDetails .rentalDateField .icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+.carSummary .field .value,
+.rentalDateDetails .rentalDateField .value {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 127%;
+    color: #242121;
+}
+.rentalDateDetails p{
+    font-size: 16px;
+    color: #696969;
+    font-weight: 700;
+}
+.rentalDateDetails .rentalDateField span {
+    /*
+    font-size: 22px;
+    color: var(--letter-color2);
+    font-weight: 600;
+    */
+    font-size: 15px;
+    color: var(--letter-color2);
+    font-weight: 600;
+}
+
+.rentalDateDetails .rentalDateField .invalid-feedback {
+    color: red;
+    align-self: start;
+    font-size: 12px;
+}
+
+.rentalDateDetails .rentalDateField .datePicker{
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 15px;
+    background: transparent;
+    border: none;
+    outline: none;
+    background: var(--letter-color2);
+    color: #fff;
+    resize: none;
+    border-radius: 5px;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    line-height: 1.47059;
+    width: 265px;
+    height: 45px;
+}
+.rentalDateDetails .rentalDateField input::placeholder {
+    color: #999;
+}
+.summaryAndPrice {
+    display: none;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+.summaryAndPrice .nextButton {
+    color: var(--button-letter-color);
+    width: 118px;
+    height: 44px;
+    border: 1px solid var(--button-letter-color);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+}
+.summaryAndPrice .nextButton:hover{
+    background: var(--button-bg-color-hover);
+    color: var(--button-letter-color-hover);
+}
+@media(max-width: 1050px) {
+    .rentalSection .rentalContent {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        max-width: 1800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .priceField2{
+       display: none;
+    }
+    .rentalSummary {
+        display: none;
+    }
+    .rentalSection .rentalContent .carImage2 {
+        display: flex;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .priceField{
+        display: block;
+    }
+    .summaryAndPrice{
+        display: flex;
+    }
+}
+@media(max-width: 370px) {
+.rentalDateDetails .rentalDateField .datePicker {
+        width: 200px;
+        height: 45px;
+    }
+}
+
+
+
+/* login section */
+
+.section .pageTitle{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    width: 100%;
+}
+.section .pageTitle h2{
+    font-size: 32px;
+    color: var(--letter-color2);
+    font-weight: 600;
+    line-height: 1.5em;
+}
+.forms{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.forms .registrationSection{
+    width: 50%;
+}
+.forms .registrationSection .label p{
+    font-size: 16px;
+    color: #696969;
+    font-weight: 700;
+}
+.forms .separator{
+    width: 1px;
+    height: 530px;
+    background-color: #696969;
+    border-radius: 10px;
+}
+.forms .loginSection{
+    width: 50%;
+}
+.forms .loginSection .label p{
+    font-size: 16px;
+    color: #696969;
+    font-weight: 700;
+}
+.forms .loginSection .goToPaymet{
+    bottom: 0;
+}
+@media(max-width: 1050px) {
+    .forms .separator{
+        width: 100%;
+        height: 1px;
+        background-color: #696969;
+        border-radius: 10px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .forms .registrationSection{
+        width: 100%;
+    }
+    .forms .loginSection{
+        width: 100%;
+    }
+    .forms{
+        padding-bottom: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        display: block;
+    }
+    
+}
+@media(max-width: 400px) {
+    .forms{
+        padding-bottom: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: block;
+    }
+}
+
+
+/* payment section */
+
+.paymentSection{
+    background: var(--bg-color1);
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+.paymentSection .pageTitle{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    width: 100%;
+}
+.paymentSection .pageTitle h2{
+    font-size: 32px;
+    color: var(--letter-color2);
+    font-weight: 600;
+    line-height: 1.5em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.paymentSection .payment .checkbox {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.checkbox .checkInput {
+    position: absolute;
+    opacity: 0;
+}
+.checkbox{
+    font-size: 16px;
+    color: #696969;
+    font-weight: 700;
+}
+.checkbox p{
+    font-size: 16px;
+    color: var(--letter-color2);
+    font-weight: 600;
+    margin-left: 35px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+.checkbox:hover input ~ .checkmark {
+    background-color: #DDDDDD;
+}
+.checkbox input:checked ~ .checkmark {
+    background-color: #DDDDDD;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+.checkbox .checkmark:after {
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #7F56D9;
+}
+.paymentSection .payment .checkbox:nth-child(2) .paymentFields{
+    margin-left: 35px;
+    margin-bottom: 20px;
+}
+.paymentSection .payment .checkbox:nth-child(2) .paymentFields form .form-paymentField input{
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 15px;
+    background: transparent;
+    border: none;
+    outline: none;
+    background: var(--letter-color2);
+    color: #fff;
+    resize: none;
+    border-radius: 5px;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    line-height: 1.47059;
+    width: 350px;
+    height: 45px;
+}
+.paymentSection .payment .checkbox:nth-child(2) .paymentFields form .form-paymentField input::placeholder {
+    color: #999;
+}
+.paymentSection .payment .checkbox:nth-child(2) .paymentFields form .form-paymentField {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.paymentSection .payment .checkbox:nth-child(2) .paymentFields form{
+    padding-top: 30px;
+    display: grid;
+}
+.paymentSection .payment .checkbox:nth-child(2) .paymentFields form .flexFields{
+    display: flex;
+}
+.paymentSection .payment .checkbox:nth-child(2) .paymentFields form .flexFields .form-paymentField:nth-child(1){
+    width: 74%;
+    display: flex;
+    margin-right: 15px;
+}
+.paymentSection .payment .checkbox:nth-child(2) .paymentFields form .flexFields .form-paymentField:nth-child(2){
+    width: 15%;
+    display: flex;
+}
+.paymentSection .payment .checkbox:nth-child(2) .paymentFields form .flexFields .form-paymentField:nth-child(1) input{
+    width: 270px;
+    display: flex;
+}
+.paymentSection .payment .checkbox:nth-child(2) .paymentFields form .flexFields .form-paymentField:nth-child(2) input{
+    width: 55px;
+    display: flex;
+}
+.paymentSection .payment .summary {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.paymentSection .payment .summary .summaryButton {
+    color: var(--button-letter-color);
+    width: 120px;
+    height: 44px;
+    border: 1px solid var(--button-letter-color);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.paymentSection .payment .summary .summaryButton:hover {
+    background: var(--button-bg-color-hover);
+    color: var(--button-letter-color-hover);
+}
+.invalid-feedback-payment {
+    color: red;
+    font-size: 12px;
+    width: 275px;
+}
+.invalid-feedback-payment-CVV {
+    color: red;
+    font-size: 12px;
+    width: 30px;
+}
+
+@media(max-width: 430px) {
+    .payment{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .paymentSection .payment .checkbox:nth-child(2) .paymentFields form .form-paymentField input{
+        width: 300px;
+    }
+    .paymentSection .payment .checkbox:nth-child(2) .paymentFields form .flexFields{
+        width: 300px;
+    }
+    .paymentSection .payment .checkbox:nth-child(2) .paymentFields form .flexFields .form-paymentField:nth-child(1) input{
+        width: 215px;
+    }
+    .paymentSection .payment .checkbox:nth-child(2) .paymentFields form .flexFields .form-paymentField:nth-child(1) {
+        width: 74%;
+    }
+    .paymentSection .payment .checkbox:nth-child(2) .paymentFields form .flexFields .form-paymentField:nth-child(2) input {
+        width: 62px;
+    }
+}
+@media(max-width: 365px) {
+    .payment{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .paymentSection .payment .checkbox:nth-child(2) .paymentFields form .form-paymentField input{
+        width: 270px;
+    }
+    .paymentSection .payment .checkbox:nth-child(2) .paymentFields form .flexFields{
+        width: 270px;
+    }
+    .paymentSection .payment .checkbox:nth-child(2) .paymentFields form .flexFields .form-paymentField:nth-child(1) input{
+        width: 185px;
+    }
+    .paymentSection .payment .checkbox:nth-child(2) .paymentFields form .flexFields .form-paymentField:nth-child(1) {
+        width: 71%;
+    }
+    .paymentSection .payment .checkbox:nth-child(2) .paymentFields form .flexFields .form-paymentField:nth-child(2) input {
+        width: 62px;
+    }
+}
+@media(max-width: 330px) {
+    .payment{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .paymentSection .payment .checkbox:nth-child(2) .paymentFields form .form-paymentField input{
+        width: 240px;
+    }
+    .paymentSection .payment .checkbox:nth-child(2) .paymentFields form .flexFields{
+        width: 240px;
+    }
+    .paymentSection .payment .checkbox:nth-child(2) .paymentFields form .flexFields .form-paymentField:nth-child(1) input{
+        width: 155px;
+    }
+    .paymentSection .payment .checkbox:nth-child(2) .paymentFields form .flexFields .form-paymentField:nth-child(1) {
+        width: 67%;
+    }
+    .paymentSection .payment .checkbox:nth-child(2) .paymentFields form .flexFields .form-paymentField:nth-child(2) input {
+        width: 62px;
+    }
+}
+
+
+
+/* summary section */
+
+.summaryDeliverySection{
+    background: var(--bg-color1);
+}
+.summaryDeliverySection .summaryTitle{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.summaryDeliverySection .summaryTitle h2{
+    font-size: 32px;
+    color: var(--letter-color2);
+    font-weight: 600;
+    line-height: 1.5em;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+.summaryDeliverySection .summaryTitle p{
+    font-size: 20px;
+    color: var(--letter-color4);
+    font-weight: 500;
+    line-height: 1.5em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.summaryDeliverySection .deliveryInfo{
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: center;
+    display: grid;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.summaryDeliverySection .deliveryInfo .rentInfo h3{
+    font-size: 26px;
+    color: var(--letter-color2);
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: flex;
+}
+.summaryDeliverySection .deliveryInfo .rentInfo .rentNumber p{
+    font-size: 16px;
+    color: #696969;
+    font-weight: 700;
+    margin-right: 15px;
+}
+.summaryDeliverySection .deliveryInfo .rentInfo .rentNumber h4{
+    font-size: 22px;
+    color: var(--letter-color2);
+    font-weight: 600;
+}
+.summaryDeliverySection .deliveryInfo .rentInfo .rentNumber {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.summaryDeliverySection .deliveryInfo .carRentalInfo{
+   display: flex;
+}
+.summaryDeliverySection .deliveryInfo .carRentalInfo .carRentalPhoto{
+    margin-top: 10px;
+    height: 200px;
+    width: 338px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+}
+.summaryDeliverySection .deliveryInfo .carRentalInfo .carRentalInformations {
+    display: table-column;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+.summaryDeliverySection .deliveryInfo .carRentalInfo .carRentalInformations .rentalInfo:nth-child(2){
+    margin-top: 10px;
+}
+.summaryDeliverySection .deliveryInfo .carRentalInfo .carRentalInformations .rentalInfo:nth-child(3){
+    margin-top: 10px;
+}
+.summaryDeliverySection .deliveryInfo .carRentalInfo .carRentalInformations .rentalInfo p{
+    font-size: 16px;
+    color: #696969;
+    font-weight: 700;
+}
+.summaryDeliverySection .deliveryInfo .carRentalInfo .carRentalInformations .rentalInfo h1{
+    font-size: 22px;
+    color: var(--letter-color2);
+    font-weight: 600;
+}
+.summaryDeliverySection .deliveryInfo .carWashText {
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+.summaryDeliverySection .deliveryInfo .carWashText h1{
+    font-size: 20px;
+    color: var(--letter-color4);
+    font-weight: 500;
+    margin-top: 25px;
+}
+.summaryDeliverySection .deliveryInfo .rentDeliveryInfo .collectRent{
+    margin-bottom: 20px;
+}
+.summaryDeliverySection .deliveryInfo .rentDeliveryInfo .collectRent p{
+    font-size: 16px;
+    color: #696969;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.summaryDeliverySection .deliveryInfo .rentDeliveryInfo .collectRent .where .icon,
+.summaryDeliverySection .deliveryInfo .rentDeliveryInfo .collectRent .when .icon, 
+.summaryDeliverySection .deliveryInfo .rentDeliveryInfo .collectRent .time .icon{
+    width: 25px;
+    height: 25px;
+}  
+.summaryDeliverySection .deliveryInfo .rentDeliveryInfo .collectRent .where span,
+.summaryDeliverySection .deliveryInfo .rentDeliveryInfo .collectRent .when span, 
+.summaryDeliverySection .deliveryInfo .rentDeliveryInfo .collectRent .time span{
+    font-size: 22px;
+    color: var(--letter-color2);
+    font-weight: 600;
+    margin-left: 15px;
+}  
+.summaryDeliverySection .deliveryInfo .rentDeliveryInfo .collectRent .where,
+.summaryDeliverySection .deliveryInfo .rentDeliveryInfo .collectRent .when, 
+.summaryDeliverySection .deliveryInfo .rentDeliveryInfo .collectRent .time{
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 10px;
+} 
+.summaryDeliverySection .deliveryInfo .rentDeliveryInfo .returnRent p{
+    font-size: 16px;
+    color: #696969;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.summaryDeliverySection .deliveryInfo .rentDeliveryInfo .returnRent .where .icon,
+.summaryDeliverySection .deliveryInfo .rentDeliveryInfo .returnRent .when .icon, 
+.summaryDeliverySection .deliveryInfo .rentDeliveryInfo .returnRent .time .icon{
+    width: 25px;
+    height: 25px;
+}  
+.summaryDeliverySection .deliveryInfo .rentDeliveryInfo .returnRent .where span,
+.summaryDeliverySection .deliveryInfo .rentDeliveryInfo .returnRent .when span, 
+.summaryDeliverySection .deliveryInfo .rentDeliveryInfo .returnRent .time span{
+    font-size: 22px;
+    color: var(--letter-color2);
+    font-weight: 600;
+    margin-left: 15px;
+} 
+.summaryDeliverySection .deliveryInfo .rentDeliveryInfo .returnRent .where,
+.summaryDeliverySection .deliveryInfo .rentDeliveryInfo .returnRent .when, 
+.summaryDeliverySection .deliveryInfo .rentDeliveryInfo .returnRent .time{
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 10px;
+} 
+.summaryDeliverySection .endText h2{
+    font-size: 20px;
+    color: var(--letter-color4);
+    font-weight: 600;
+    line-height: 1.5em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.summaryDeliverySection .back {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+.summaryDeliverySection .back .backButton{
+    color: var(--button-letter-color);
+    width: 210px;
+    height: 44px;
+    border: 1px solid var(--button-letter-color);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+.summaryDeliverySection .back .backButton:hover {
+    background: var(--button-bg-color-hover);
+    color: var(--button-letter-color-hover);
+}
+@media(max-width: 862px){
+    .summaryDeliverySection .deliveryInfo .carRentalInfo .carRentalPhoto{
+        height: 210px;
+        width: 360px;
+    }
+}
+@media(max-width: 852px){
+    .summaryDeliverySection .deliveryInfo .carRentalInfo .carRentalPhoto{
+        height: 210px;
+        width: 360px;
+    }
+}
+@media(max-width: 740px){
+    .summaryDeliverySection .deliveryInfo .carRentalInfo {
+        display: block;
+    }
+    .summaryDeliverySection .deliveryInfo .carRentalInfo .carRentalInformations {
+        margin-left: 0px;
+        margin-top: 25px;
+    }
+    .summaryDeliverySection .deliveryInfo {
+        justify-content: center;
+        align-content: center;
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media(max-width: 380px){
+    .summaryDeliverySection .deliveryInfo .carRentalInfo .carRentalPhoto{
+        height: 230px;
+        width: 100%;
+    }
+    .summaryDeliverySection{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+
+/* personal data section */
+
+
+.pDSection{
+    background: var(--bg-color1);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.pDSection .personDataSection {
+    max-width: 1800px;
+    align-items: center;
+    justify-content: center;
+    display: inline;
+}
+.pDSection .personDataSection .personData_pageTitle h2{
+    padding-top: 50px;
+    font-size: 32px;
+    color: var(--letter-color2);
+    font-weight: 600;
+    line-height: 1.5em;
+}
+.pDSection .personDataSection .personData_pageTitle p{
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-size: 18px;
+    line-height: 1.47059;
+    color: var(--letter-color2);
+    padding-bottom: 20px;
+}
+.pDSection .personDataSection .personDataSection_fields{
+    padding-top: 30px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.pDSection .personDataSection .personDataSection_fields .personData_form-field{
+    margin-bottom: 10px;
+}
+.pDSection .personDataSection .personDataSection_fields .personData_form-field label{
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-size: 16px;
+    color: var(--letter-color2);
+    margin-bottom: 5px;
+    margin-left: 0px;
+    justify-content: left;
+    align-items: baseline;
+    display: flex;
+}
+.pDSection .personDataSection .personDataSection_fields .personData_form-field input{
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 15px;
+    background: transparent;
+    border: none;
+    outline: none;
+    background: var(--letter-color2);
+    color: #fff;
+    resize: none;
+    border-radius: 5px;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    line-height: 1.47059;
+    width: 350px;
+    height: 45px;
+}
+.pDSection .personDataSection .personDataSection_fields .personData_form-field input::placeholder {
+    color: #fff;
+}
+.pDSection .personDataSection .personDataSection_submitButton .nextButton {
+    color: var(--button-letter-color);
+    width: 120px;
+    height: 44px;
+    border: 1px solid var(--button-letter-color);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    justify-content: center;
+    margin-bottom: 388px;
+}
+.pDSection .personDataSection .personDataSection_submitButton .nextButton:hover {
+    background: var(--button-bg-color-hover);
+    color: var(--button-letter-color-hover);
+}
+@media(max-width: 370px) {
+    .pDSection .personDataSection .personDataSection_fields .personData_form-field input {
+        width: 100%;
+    }
+}

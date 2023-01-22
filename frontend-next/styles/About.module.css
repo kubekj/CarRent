@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.baner {
+  position: relative;
+  height: 495px;
+  background: url(../assets/baners/about_baner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.baner h2 {
+  font-size: 3em;
+  color: var(--letter-color1);
+  font-weight: 600;
+  line-height: 1.5em;
+}
+
+.content {
+  background-color: black;
+  color: white;    
+  min-height: 64vh;
+}
+
+.contentBox {
+  display: flex;
+  justify-content: space-around;
+  margin: 0% 10%;
+  padding: 5% 0%;
+}
+
+.about {
+  order: 1;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about .heading {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+  color: #FCFAFF;
+  margin-bottom: 16px;
+}
+
+.about .text {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #FCFCFC;
+  margin-bottom: 38px;
+}
+
+.about .text p {
+  margin-bottom: 16px;
+}
+
+.about .prosList {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #7F56D9;
+}
+
+.about .prosList .list .listItem {
+  display: inline-flex;
+  width: 100%;
+  margin-bottom: 21px;
+}
+
+.about .prosList .list .listItem .listIcon {
+  width: 40px;
+  height: 40px;
+  margin-right: 13px;
+}
+
+.about .prosList .list .listItem p {
+  align-self: center;
+}
+
+.prosBoxes {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin-right: 20px;
+}
+
+.prosBoxes .prosBox {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  background: #424242;
+  border-radius: 8px;
+  height: 303px;
+  width: 409px;
+  margin-bottom: 21px;
+  padding: 20px 30px;
+}
+
+.prosBoxes .prosBox .prosTitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 28px;
+  color: #7F56D9;
+  margin-bottom: 10px;
+}
+
+.prosBoxes .prosBox .prosText {
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FCFAFF;
+}
+
+.prosBoxes .prosBox .prosLink{
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #7F56D9;
+  display: inline-flex;
+  width: fit-content;
+}
+.prosBoxes .prosBox .prosLink:hover{
+  color: #b692f6;
+}
+
+@media only screen and (max-width: 1050px) {
+  .about {
+    width: 100%;
+    padding-left: 50px;
+  }
+  .prosBoxes {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .about {
+    width: 100%;
+    padding-left: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .prosBoxes {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+  }
+  .contentBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 96px;
+    flex-direction: column;
+    margin: 0% 0%;
+  }
+  .contentBox {
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 0%;
+  }
+  .prosBoxes .prosBox {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background: #424242;
+    border-radius: 8px;
+    height: 303px;
+    width: 100%;
+    margin-bottom: 21px;
+    padding: 20px 30px;
+  }
+}
+
+@media only screen and (max-width: 405px) {
+  .prosBoxes .prosBox .prosTitle {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 347px) {
+  .prosBoxes .prosBox .prosTitle {
+    font-size: 40px;
+  }
+  .prosBoxes .prosBox .prosText {
+    font-size: 20px;
+  }
+}
